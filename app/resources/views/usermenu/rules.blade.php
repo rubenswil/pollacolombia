@@ -20,7 +20,7 @@
                             <h4>{{ __('Rules of the Game') }} </h4>
                         </div>
                         <div class="col-md-2">
-                                <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary addbutton" id="myBtn" style="width: 100%;" onclick="window.location='{{ route('home') }}'">Home</button>
+                                <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary addbutton" id="myBtn" style="width: 100%;" onclick="window.location='{{ route('home') }}'">Inicio</button>
                             </div>
                     </div>
                     

@@ -53,7 +53,7 @@
             @guest
                 <div class="card">
 
-                    <div class="card-header"><h4>{{ __('Login') }}</h4></div>
+                    <div class="card-header"><h4>{{ __('Ingreso') }}</h4></div>
 
                     <div class="card-body">
                         <form method="POST" action="{{ route('login') }}">
@@ -64,7 +64,7 @@
                             <div class="form-group row">
 
                                 <div class="col-md-12">
-                                    <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus placeholder="E-Mail Address">
+                                    <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus placeholder="E-Mail">
                                         <span class="invalid-feedback">
                                             <strong>{{ $errors->first('email') }}</strong>
                                         </span>
@@ -74,7 +74,7 @@
                             <div class="form-group row">
 
                                 <div class="col-md-12">
-                                    <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required placeholder="Password">
+                                    <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required placeholder="Contraseña">
                                     @if ($errors->has('password'))
                                         <span class="invalid-feedback">
                                             <strong>{{ $errors->first('password') }}</strong>
@@ -86,7 +86,7 @@
                             <div class="form-group row">
                                 <div class="col-md-8 offset-md-2">
                                     <button type="submit" class="btn btn-primary" style="width: 100%;">
-                                        {{ __('Login') }}
+                                        {{ __('Entrar') }}
                                     </button>
                                 </div>
                             </div>
@@ -95,7 +95,7 @@
                         <div class="form-group row">
                             <div class="col-md-8 offset-md-2">
                                 <button type="" class="btn btn-primary" onclick="window.location='{{ route('register') }}'" style="width: 100%;">
-                                    {{ __('Register') }}
+                                    {{ __('Registro') }}
                                 </button>
                             </div>
                         </div>
@@ -103,14 +103,14 @@
                         <div class="form-group row">
                             <div class="col-md-8 offset-md-2" style="text-align: center;">
                                 <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    {{ __('Forgot Your Password?') }}
+                                    {{ __('Recordar Contraseña?') }}
                                 </a>
                             </div>
                         </div>
 
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-2" style="text-align: center;">
-                                <p>Questions? contact@pollaworldcup.com</p>
+                                <p>Preguntas? contact@pollaworldcup.com</p>
                             </div>
                         </div>
                         
@@ -123,7 +123,7 @@
                             
                         </li>   
                         <li>
-                            <a href="{{route('home')}}"><button class="btn btn-primary" id="close"> Go back Home </button></a>
+                            <a href="{{route('home')}}"><button class="btn btn-primary" id="close"> Volver al Inicio </button></a>
                         </li>
                     </ul>
                 </div>

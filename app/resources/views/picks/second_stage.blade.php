@@ -51,7 +51,7 @@
                         <div class="card-header">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <h6>{{ __('Round of 16') }} </h6>
+                                    <h6>{{ __('Ronda de 16') }} </h6>
                                 </div>
                             </div>
                         </div>
@@ -645,7 +645,7 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-md-12">
-                    <h6>{{ __('Quarter-finals') }} </h6>
+                    <h6>{{ __('Quartos de final') }} </h6>
                 </div>
             </div>
         </div>
@@ -683,14 +683,14 @@
                                     <div class="col-md-12">
                                         @if (isset($ss->quarter_1))
                                         {!! Form::select('WRound1A2B', [
-                                          '' => 'Pick a Team',
+                                          '' => 'Seleccione un equipo',
                                           "$winA->id_winner_team" => "$winA->team_name",
                                           "$winB->id_runnerup" => "$winB->team_rumup",
                                           ], old('value', isset($ss->quarter_1) ? $ss->quarter_1 : null ), [ 'class' =>  'form-control WRound1A2B', 'required', 'id' => 'WRound1A2B']) !!}
                                           @else
 
                                           <select class="form-control WRound1A2B" id="WRound1A2B" name="WRound1A2B">
-                                            <option>Pick a Team...</option>
+                                            <option>Seleccione un equipo...</option>
                                             @if($winA != null && $winB != null)
                                             <option value="{{$winA->id_winner_team}}">{{$winA->team_name}}</option>
 
@@ -740,14 +740,14 @@
                                 <div class="col-md-12">
                                     @if (isset($ss->quarter_2))
                                     {!! Form::select('WRound1C2D', [
-                                      '' => 'Pick a Team',
+                                      '' => 'Seleccione un equipo',
                                       "$winC->id_winner_team" => "$winC->team_name",
                                       "$winD->id_runnerup" => "$winD->team_rumup",
                                       ], old('value', isset($ss->quarter_2) ? $ss->quarter_2 : null ), [ 'class' =>  'form-control WRound1C2D', 'required', 'id' => 'WRound1C2D']) !!}
                                       @else
 
                                       <select class="form-control WRound1C2D" id="WRound1C2D" name="WRound1C2D">
-                                        <option>Pick a Team...</option>
+                                        <option>Seleccione un equipo...</option>
                                         @if($winC != null && $winD != null)
                                         <option value="{{$winC->id_winner_team}}">{{$winC->team_name}}</option>
                                         <option value="{{$winD->id_runnerup}}">{{$winD->team_rumup}}</option>
@@ -799,14 +799,14 @@
 
                                 @if (isset($ss->quarter_3))
                                 {!! Form::select('WRound1E2F', [
-                                  '' => 'Pick a Team',
+                                  '' => 'Seleccione un equipo',
                                   "$winE->id_winner_team" => "$winE->team_name",
                                   "$winF->id_runnerup" => "$winF->team_rumup",
                                   ], old('value', isset($ss->quarter_3) ? $ss->quarter_3 : null ), [ 'class' =>  'form-control WRound1E2F', 'required', 'id' => 'WRound1E2F']) !!}
                                   @else
 
                                   <select class="form-control WRound1E2F" id="WRound1E2F" name="WRound1E2F">
-                                    <option>Pick a Team...</option>
+                                    <option>Seleccione un equipo...</option>
                                     @if($winE != null && $winF != null)
                                     <option value="{{$winE->id_winner_team}}">{{$winE->team_name}}</option>
                                     <option value="{{$winF->id_runnerup}}">{{$winF->team_rumup}}</option>
@@ -857,14 +857,14 @@
 
                             @if (isset($ss->quarter_4))
                             {!! Form::select('WRound1G2H', [
-                              '' => 'Pick a Team',
+                              '' => 'Seleccione un equipo',
                               "$winG->id_winner_team" => "$winG->team_name",
                               "$winH->id_runnerup" => "$winH->team_rumup",
                               ], old('value', isset($ss->quarter_4) ? $ss->quarter_4 : null ), [ 'class' =>  'form-control WRound1G2H', 'required', 'id' => 'WRound1G2H']) !!}
                               @else
 
                               <select class="form-control WRound1G2H" id="WRound1G2H" name="WRound1G2H">
-                                <option>Pick a Team...</option>
+                                <option>Seleccione un equipo...</option>
                                 @if($winG != null && $winH != null)
                                 <option value="{{$winG->id_winner_team}}">{{$winG->team_name}}</option>
                                 <option value="{{$winH->id_runnerup}}">{{$winH->team_rumup}}</option>
@@ -915,14 +915,14 @@
 
                             @if (isset($ss->quarter_5))
                             {!! Form::select('WRound1B2A', [
-                              '' => 'Pick a Team',
+                              '' => 'Seleccione un equipo',
                               "$winB->id_winner_team" => "$winB->team_name",
                               "$winA->id_runnerup" => "$winA->team_rumup",
                               ], old('value', isset($ss->quarter_5) ? $ss->quarter_5 : null ), [ 'class' =>  'form-control WRound1B2A', 'required', 'id' => 'WRound1B2A']) !!}
                               @else
 
                               <select class="form-control WRound1B2A" id="WRound1B2A" name="WRound1B2A">
-                                <option>Pick a Team...</option>
+                                <option>Seleccione un equipo...</option>
                                 @if($winB != null && $winA != null)
                                 <option value="{{$winB->id_winner_team}}">{{$winB->team_name}}</option>
                                 <option value="{{$winA->id_runnerup}}">{{$winA->team_rumup}}</option>
@@ -972,14 +972,14 @@
                         <div class="col-md-12">
                             @if (isset($ss->quarter_6))
                             {!! Form::select('WRound1D2C', [
-                              '' => 'Pick a Team',
+                              '' => 'Seleccione un equipo',
                               "$winD->id_winner_team" => "$winD->team_name",
                               "$winC->id_runnerup" => "$winC->team_rumup",
                               ], old('value', isset($ss->quarter_6) ? $ss->quarter_6 : null ), [ 'class' =>  'form-control WRound1D2C', 'required', 'id' => 'WRound1D2C']) !!}
                               @else
 
                               <select class="form-control WRound1D2C" id="WRound1D2C" name="WRound1D2C">
-                                <option>Pick a Team...</option>
+                                <option>Seleccione un equipo...</option>
                                 @if($winD != null && $winC != null)
                                 <option value="{{$winD->id_winner_team}}">{{$winD->team_name}}</option>
                                 <option value="{{$winC->id_runnerup}}">{{$winC->team_rumup}}</option>
@@ -1030,14 +1030,14 @@
 
                             @if (isset($ss->quarter_7))
                             {!! Form::select('WRound1F2E', [
-                              '' => 'Pick a Team',
+                              '' => 'Seleccione un equipo',
                               "$winF->id_winner_team" => "$winF->team_name",
                               "$winE->id_runnerup" => "$winE->team_rumup",
                               ], old('value', isset($ss->quarter_7) ? $ss->quarter_7 : null ), [ 'class' =>  'form-control WRound1F2E', 'required', 'id' => 'WRound1F2E']) !!}
                               @else
 
                               <select class="form-control WRound1F2E" id="WRound1F2E" name="WRound1F2E">
-                                <option>Pick a Team...</option>
+                                <option>Seleccione un equipo...</option>
                                 @if($winF != null && $winE != null)
                                 <option value="{{$winF->id_winner_team}}">{{$winF->team_name}}</option>
                                 <option value="{{$winE->id_runnerup}}">{{$winE->team_rumup}}</option>
@@ -1087,14 +1087,14 @@
 
                             @if (isset($ss->quarter_8))
                             {!! Form::select('WRound1H2G', [
-                              '' => 'Pick a Team',
+                              '' => 'Seleccione un equipo',
                               "$winH->id_winner_team" => "$winH->team_name",
                               "$winG->id_runnerup" => "$winG->team_rumup",
                               ], old('value', isset($ss->quarter_8) ? $ss->quarter_8 : null ), [ 'class' =>  'form-control WRound1H2G', 'required', 'id' => 'WRound1H2G']) !!}
                               @else
 
                               <select class="form-control WRound1H2G" id="WRound1H2G" name="WRound1H2G">
-                                <option>Pick a Team...</option>
+                                <option>Seleccione un equipo...</option>
                                 @if($winH != null && $winG != null)
                                 <option value="{{$winH->id_winner_team}}">{{$winH->team_name}}</option>
                                 <option value="{{$winG->id_runnerup}}">{{$winG->team_rumup}}</option>
@@ -1125,7 +1125,7 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-md-12">
-                    <h6>{{ __('Semi-finals') }} </h6>
+                    <h6>{{ __('Semifinales') }} </h6>
                 </div>
             </div>
         </div>
@@ -1159,12 +1159,12 @@
                                                 <div class="col-md-12">
                                                     @if (isset($ss->semi_1))
                                                     {!! Form::select('Wquarter1_2', [
-                                                        '' => 'Pick a Team',
+                                                        '' => 'Seleccione un equipo',
                                                         "$ss->semi_1" => $ss->semi1->team_name,
                                                         ], old('value', isset($ss->semi_1) ? $ss->semi_1 : null ), [ 'class' =>  'form-control Wquarter1_2', 'required', 'id' => 'Wquarter1_2']) !!}
                                                         @else
                                                         {!! Form::select('Wquarter1_2', [
-                                                            '' => 'Pick a Team',
+                                                            '' => 'Seleccione un equipo',
                                                             ], null, [ 'class' =>  'form-control Wquarter1_2', 'required', 'id' => 'Wquarter1_2']) !!}
                                                             @endif
 
@@ -1205,12 +1205,12 @@
                                                         <div class="col-md-12">
                                                             @if (isset($ss->semi_2))
                                                             {!! Form::select('Wquarter3_4', [
-                                                                '' => 'Pick a Team',
+                                                                '' => 'Seleccione un equipo',
                                                                 "$ss->semi_2" => $ss->semi2->team_name,
                                                                 ], old('value', isset($ss->semi_2) ? $ss->semi_2 : null ), [ 'class' =>  'form-control Wquarter3_4', 'required', 'id' => 'Wquarter3_4']) !!}
                                                                 @else
                                                                 {!! Form::select('Wquarter3_4', [
-                                                                    '' => 'Pick a Team',
+                                                                    '' => 'Seleccione un equipo',
                                                                     ], null, [ 'class' =>  'form-control Wquarter3_4', 'required', 'id' => 'Wquarter3_4']) !!}
                                                                     @endif
                                                                 </div>
@@ -1247,12 +1247,12 @@
 
                                                                     @if (isset($ss->semi_3))
                                                                     {!! Form::select('Wquarter5_6', [
-                                                                        '' => 'Pick a Team',
+                                                                        '' => 'Seleccione un equipo',
                                                                         "$ss->semi_3" => $ss->semi3->team_name,
                                                                         ], old('value', isset($ss->semi_3) ? $ss->semi_3 : null ), [ 'class' =>  'form-control Wquarter5_6', 'required', 'id' => 'Wquarter5_6']) !!}
                                                                         @else
                                                                         {!! Form::select('Wquarter5_6', [
-                                                                            '' => 'Pick a Team',
+                                                                            '' => 'Seleccione un equipo',
                                                                             ],null, [ 'class' =>  'form-control Wquarter5_6', 'required', 'id' => 'Wquarter5_6']) !!}
                                                                             @endif
 
@@ -1289,12 +1289,12 @@
                                                                         <div class="col-md-12">
                                                                             @if (isset($ss->semi_4))
                                                                             {!! Form::select('Wquarter7_8', [
-                                                                                '' => 'Pick a Team',
+                                                                                '' => 'Seleccione un equipo',
                                                                                 "$ss->semi_4" => $ss->semi4->team_name,
                                                                                 ], old('value', isset($ss->semi_4) ? $ss->semi_4 : null ), [ 'class' =>  'form-control Wquarter7_8', 'required', 'id' => 'Wquarter7_8']) !!}
                                                                                 @else
                                                                                 {!! Form::select('Wquarter7_8',[
-                                                                                    '' => 'Pick a Team',
+                                                                                    '' => 'Seleccione un equipo',
                                                                                     ], null, [ 'class' =>  'form-control Wquarter7_8', 'required', 'id' => 'Wquarter7_8']) !!}
                                                                                     @endif
                                                                                 </div>
@@ -1361,12 +1361,12 @@
 
                                                                                 @if (isset($ss->final_1))
                                                                                 {!! Form::select('WSemi1_2', [
-                                                                                    '' => 'Pick a Team',
+                                                                                    '' => 'Seleccione un equipo',
                                                                                     "$ss->final_1" => $ss->final1->team_name,
                                                                                     ], old('value', isset($ss->final_1) ? $ss->final_1 : null ), [ 'class' =>  'form-control WSemi1_2', 'required', 'id' => 'WSemi1_2']) !!}
                                                                                     @else
                                                                                     {!! Form::select('WSemi1_2',[
-                                                                                        '' => 'Pick a Team',
+                                                                                        '' => 'Seleccione un equipo',
                                                                                         ], null, [ 'class' =>  'form-control WSemi1_2', 'required', 'id' => 'WSemi1_2']) !!}
                                                                                         @endif
 
@@ -1407,12 +1407,12 @@
 
                                                                                        @if (isset($ss->final_2))
                                                                                        {!! Form::select('WSemi3_4', [
-                                                                                        '' => 'Pick a Team',
+                                                                                        '' => 'Seleccione un equipo',
                                                                                         "$ss->final_2" => $ss->final2->team_name,
                                                                                         ], old('value', isset($ss->final_2) ? $ss->final_2 : null ), [ 'class' =>  'form-control WSemi3_4', 'required', 'id' => 'WSemi3_4']) !!}
                                                                                         @else
                                                                                         {!! Form::select('WSemi3_4',[
-                                                                                            '' => 'Pick a Team',
+                                                                                            '' => 'Seleccione un equipo',
                                                                                             ], null, [ 'class' =>  'form-control WSemi3_4', 'required', 'id' => 'WSemi3_4']) !!}
                                                                                             @endif
 
@@ -1437,7 +1437,7 @@
                                                 <div class="card-header">
                                                     <div class="row">
                                                         <div class="col-md-12">
-                                                            <h6>Champion</h6>
+                                                            <h6>Campeon</h6>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1471,12 +1471,12 @@
 
                                                                                            @if (isset($ss->winner))
                                                                                            {!! Form::select('Winner1', [
-                                                                                            '' => 'Pick a Team',
+                                                                                            '' => 'Seleccione un equipo',
                                                                                             "$ss->winner" => $ss->winner1->team_name,
                                                                                             ], old('value', isset($ss->winner) ? $ss->winner : null ), [ 'class' =>  'form-control Winner1', 'required', 'id' => 'Winner1']) !!}
                                                                                             @else
                                                                                             {!! Form::select('Winner1',[
-                                                                                                '' => 'Pick a Team',
+                                                                                                '' => 'Seleccione un equipo',
                                                                                                 ], null, [ 'class' =>  'form-control Winner1', 'required', 'id' => 'Winner1']) !!}
                                                                                                 @endif
 
@@ -1510,7 +1510,7 @@
                                       </div>
 
                                       <div class="col-md-6">
-                                        <input type="button" name="submitgrouph" id="submitSecondStage" class="btn btn-info btn-block" value="Save" />
+                                        <input type="button" name="submitgrouph" id="submitSecondStage" class="btn btn-info btn-block" value="Guardar" />
                                     </button>
                                 </div>
                             </form>
@@ -1524,7 +1524,7 @@
 <script>
 {{-- {{asset('img/flags/pick_a_team.png')}} --}}
     $(document).ready(function(){
-        if($('select.WRound1A2B').value == 'Pick a Team'){
+        if($('select.WRound1A2B').value == 'Seleccione un equipo'){
                 // $(".iWRound1A2B").attr('src', '');
                 alert($(".iWRound1A2B").val());
             }

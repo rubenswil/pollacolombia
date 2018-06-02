@@ -200,7 +200,7 @@ class PicksController extends Controller
         return response()->json($pick);
 
         }else{
-            return response()->json(['error'=>'All fields Are Required']);
+            return response()->json(['error'=>'Digite todos los marcadores.']);
         }
 
     }
@@ -272,7 +272,7 @@ class PicksController extends Controller
         
             return response()->json($pick);
         }else{
-            return response()->json(['error'=>'All fields Are Required']);
+            return response()->json(['error'=>'Digite todos los marcadores.']);
         }
     }
 
@@ -344,7 +344,7 @@ class PicksController extends Controller
        
             return response()->json($pick);
         }else{
-            return response()->json(['error'=>'All fields Are Required']);
+            return response()->json(['error'=>'Digite todos los marcadores.']);
         }
 
     }  
@@ -414,7 +414,7 @@ class PicksController extends Controller
 
             return response()->json($pick);
         }else{
-            return response()->json(['error'=>'All fields Are Required']);
+            return response()->json(['error'=>'Digite todos los marcadores.']);
         }
         
         
@@ -487,7 +487,7 @@ class PicksController extends Controller
 
             return response()->json($pick);
         }else{
-            return response()->json(['error'=>'All fields Are Required']);
+            return response()->json(['error'=>'Digite todos los marcadores.']);
         }
         
         
@@ -559,7 +559,7 @@ class PicksController extends Controller
               
             return response()->json($pick);
         }else{
-            return response()->json(['error'=>'All fields Are Required']);
+            return response()->json(['error'=>'Digite todos los marcadores.']);
         }
 
         
@@ -632,7 +632,7 @@ class PicksController extends Controller
 
             return response()->json($pick);
         }else{
-            return response()->json(['error'=>'All fields Are Required']);
+            return response()->json(['error'=>'Digite todos los marcadores.']);
         }
         
         
@@ -702,7 +702,7 @@ class PicksController extends Controller
              ]);      
             return response()->json($pick);
          }else{
-            return response()->json(['error'=>'All fields Are Required']);
+            return response()->json(['error'=>'Digite todos los marcadores.']);
          
          }
 
@@ -768,7 +768,7 @@ class PicksController extends Controller
             return response()->json($stage);
 
          }else{
-            return response()->json(['error'=>'All fields Are Required']);
+            return response()->json(['error'=>'Digite todos los marcadores.']);
          }
 
     }

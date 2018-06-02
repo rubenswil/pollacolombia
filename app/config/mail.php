@@ -42,7 +42,7 @@ return [
     |
     */
 
-    'port' => env('MAIL_PORT', 587),
+    'port' => env('MAIL_PORT', 465),
 
     /*
     |--------------------------------------------------------------------------
@@ -56,8 +56,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'contact@pollaworldcup.com'),
-        'name' => env('MAIL_FROM_NAME', 'Polla World Cup'),
+        'address' => env('MAIL_FROM_ADDRESS', 'pollaworldcupcolombia@gmail.com'),
+        'name' => env('MAIL_FROM_NAME', 'Polla World Cup Colombia'),
     ],
 
     /*

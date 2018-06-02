@@ -23,10 +23,10 @@
                     <div class="card-header">
                         <div class="row">
                             <div class="col-md-8">
-                                <h4>{{ __('My Picks') }} </h4>
+                                <h4>{{ __('Mis Marcadores') }} </h4>
                             </div>
                             <div class="col-md-4">
-                                <h4 class="nickname_pool">Pool Nickname: {{$poll->poll_name}} </h4>
+                                <h4 class="nickname_pool">Nombre de la Polla: {{$poll->poll_name}} </h4>
                             </div>
                         </div>                        
                         
@@ -41,31 +41,31 @@
 
                         <ul class="nav nav-tabs" id="myTab">
                             <li class="nav-item">
-                                <a class="nav-link active" data-toggle="tab" href="#grupoa" id="idgrupoa">Group A</a>
+                                <a class="nav-link active" data-toggle="tab" href="#grupoa" id="idgrupoa">Grupo A</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#grupob" id="idgrupob">Group B</a>
+                                <a class="nav-link" data-toggle="tab" href="#grupob" id="idgrupob">Grupo B</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#grupoc" id="idgrupoc">Group C</a>
+                                <a class="nav-link" data-toggle="tab" href="#grupoc" id="idgrupoc">Grupo C</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#grupod" id="idgrupod">Group D</a>
+                                <a class="nav-link" data-toggle="tab" href="#grupod" id="idgrupod">Grupo D</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#grupoe" id="idgrupoe">Group E</a>
+                                <a class="nav-link" data-toggle="tab" href="#grupoe" id="idgrupoe">Grupo E</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#grupof" id="idgrupof">Group F</a>
+                                <a class="nav-link" data-toggle="tab" href="#grupof" id="idgrupof">Grupo F</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#grupog" id="idgrupog">Group G</a>
+                                <a class="nav-link" data-toggle="tab" href="#grupog" id="idgrupog">Grupo G</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#grupoh" id="idgrupoh">Group H</a>
+                                <a class="nav-link" data-toggle="tab" href="#grupoh" id="idgrupoh">Grupo H</a>
                             </li>
                              <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#grupoRoun" id="idgrupoRoun">Second Stage</a>
+                                <a class="nav-link" data-toggle="tab" href="#grupoRoun" id="idgrupoRoun">Segunda Etapa</a>
                             </li>
                         </ul>
 
@@ -76,9 +76,9 @@
                             <div class="tab-pane active container" id="grupoa">
                                 <br>
                                 <ul style="line-height:80%">
-                                    <li><p>  Make sure to click on “Save and go to Next Group” or “Save and go to Home Page” after you have made your Score and Winners selections.</p></li>
+                                    <li><p>Asegúrese de hacer clic en "Guardar e ir al siguiente grupo" o "Guardar e ir a la página de inicio" después de haber registrado sus marcadores y ganadores.</p></li>
                                     <li>
-                                        <p>You have to completely fill out the Score and the Winners selections.</p>
+                                        <p>Debe completar todos los Marca y Ganadores..</p>
                                     </li>    
                                 </ul>
                                 
@@ -88,7 +88,7 @@
                                             <div class="card-header">
                                                 <div class="row">
                                                     <div class="col-md-12">
-                                                        <h4>{{ __('Group A') }} </h4>
+                                                        <h4>{{ __('Grupo A') }} </h4>
                                                     </div>
                                                 </div>
                                             </div>
@@ -110,11 +110,11 @@
                                                             <table id="myTable" class="display table_picks">
                                                                     <thead>
                                                                         <tr>
-                                                                            <th class="th-date">Date</th>
-                                                                            <th class="th-venue">Venue</th>
-                                                                            <th>1st Team</th>
+                                                                            <th class="th-date">Fecha</th>
+                                                                            <th class="th-venue">Ciudad</th>
+                                                                            <th>Equipo 1</th>
                                                                             {{-- <th></th> --}}
-                                                                            <th>2st Team</th>
+                                                                            <th>Equipo 2</th>
                                                                         </tr>
                                                                     </thead>
                                                                     <tbody>
@@ -429,7 +429,7 @@
                                         <div class="row justify-content-center">
                                             <div class="col-md-12">
                                                 <div class="card">
-                                                    <div class="card-header"><h4>{{ __('Group Standings') }}</h4></div>
+                                                    <div class="card-header"><h4>{{ __('Posiciones del grupo') }}</h4></div>
 
                                                     <div class="card-body">
                                                         <div class="row">
@@ -542,7 +542,7 @@
                                                     <div class="card-header">
                                                         <div class="row">
                                                             <div class="col-md-12">
-                                                                <h4>{{ __('Winners') }} </h4>
+                                                                <h4>{{ __('Ganadores') }} </h4>
                                                             </div>
                                                         </div>
                                                         
@@ -555,9 +555,9 @@
                                                                 <div class="row">
                                                                     <div class="col-md-6">
                                                                         <div class="form-group row">
-                                                                            <div class="col-md-12">Group A winner</div>
+                                                                            <div class="col-md-12">Ganador Grupo A</div>
                                                                             {!! Form::select('WA1', [
-                                                                                  '' => 'Pick a Team',
+                                                                                  '' => 'Seleccione un Equipo',
                                                                                  '1' => 'Russia',
                                                                                  '3' => 'Saudi Arabia',
                                                                                  '4' => 'Egypt',
@@ -570,9 +570,9 @@
                                                                     </div>
                                                                     <div class="col-md-6">
                                                                         <div class="form-group row">
-                                                                            <div class="col-md-12">Group A runner-up</div>
+                                                                            <div class="col-md-12">2do Ganador Grupo A</div>
                                                                             {!! Form::select('WA2', [
-                                                                                  '' => 'Pick a Team',
+                                                                                  '' => 'Seleccione un Equipo',
                                                                                  '1' => 'Russia',
                                                                                  '3' => 'Saudi Arabia',
                                                                                  '4' => 'Egypt',
@@ -595,14 +595,14 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                          <button type="button" name="submitgroupahome" id="submitgroupahome" class="btn btn-primary" style="width: 100%;">
-                                            {{ __('Save and go to Home Page') }}
+                                            {{ __('Guardar e ir a la página de inicio') }}
                                         </button>
                                     </div>
                                     <div class="col-md-6">
 
-                                        <input type="button" name="submitgroupa" id="submitgroupa" class="btn btn-info btn-block" value="Save and go to Next Group" />
+                                        <input type="button" name="submitgroupa" id="submitgroupa" class="btn btn-info btn-block" value="Guardar e ir al siguiente grupo" />
                                          {{-- <button type="submit" class="btn btn-primary" style="width: 100%;">
-                                            {{ __('Save and go to Next Group') }} --}}
+                                            {{ __('Guardar e ir al siguiente grupo') }} --}}
                                         </button>
                                     </div>
                                 </div>
@@ -618,9 +618,9 @@
                             <div class="tab-pane container" id="grupob">
                                 <br>
                                 <ul style="line-height:80%">
-                                    <li><p>  Make sure to click on “Save and go to Next Group” or “Save and go to Home Page” after you have made your Score and Winners selections.</p></li>
+                                    <li><p>Asegúrese de hacer clic en "Guardar e ir al siguiente grupo" o "Guardar e ir a la página de inicio" después de haber registrado sus marcadores y ganadores.</p></li>
                                     <li>
-                                        <p>You have to completely fill out the Score and the Winners selections.</p>
+                                        <p>Debe completar todos los Marca y Ganadores..</p>
                                     </li>    
                                 </ul>
                                 <div class="row">
@@ -629,7 +629,7 @@
                                             <div class="card-header">
                                                 <div class="row">
                                                     <div class="col-md-4">
-                                                        <h4>{{ __('Group B') }} </h4>
+                                                        <h4>{{ __('Grupo B') }} </h4>
                                                     </div>
                                                 </div>
                                             </div>
@@ -650,11 +650,11 @@
                                                             <table id="myTable" class="display table_picks">
                                                                     <thead>
                                                                         <tr>
-                                                                            <th class="th-date">Date</th>
-                                                                            <th class="th-venue">Venue</th>
-                                                                            <th>1st Team</th>
+                                                                            <th class="th-date">Fecha</th>
+                                                                            <th class="th-venue">Ciudad</th>
+                                                                            <th>Equipo 1</th>
                                                                             {{-- <th></th> --}}
-                                                                            <th>2st Team</th>
+                                                                            <th>Equipo 2</th>
                                                                         </tr>
                                                                     </thead>
                                                                     <tbody>
@@ -969,7 +969,7 @@
                                         <div class="row justify-content-center">
                                             <div class="col-md-12">
                                                 <div class="card">
-                                                    <div class="card-header"><h4>{{ __('Group Standings') }}</h4></div>
+                                                    <div class="card-header"><h4>{{ __('Posiciones del grupo') }}</h4></div>
 
                                                     <div class="card-body">
                                                         <div class="row">
@@ -1081,8 +1081,8 @@
                                                 <div class="card">
                                                     <div class="card-header">
                                                         <div class="row">
-                                                            <div class="col-md-4">
-                                                                <h4>{{ __('Winners') }} </h4>
+                                                            <div class="col-md-12">
+                                                                <h4>{{ __('Ganadores') }} </h4>
                                                             </div>
                                                         </div>
                                                         
@@ -1095,9 +1095,9 @@
                                                                 <div class="row">
                                                                     <div class="col-md-6">
                                                                         <div class="form-group row">
-                                                                            <div class="col-md-12">Group B winner</div>
+                                                                            <div class="col-md-12">Ganador Grupo B</div>
                                                                             {!! Form::select('WB1', [
-                                                                                  '' => 'Pick a Team',
+                                                                                  '' => 'Seleccione un Equipo',
                                                                                  '5' => 'Portugal',
                                                                                  '7' => 'Spain',
                                                                                  '8' => 'Morocco',
@@ -1108,9 +1108,9 @@
                                                                     </div>
                                                                     <div class="col-md-6">
                                                                         <div class="form-group row">
-                                                                            <div class="col-md-12">Group B runner-up</div>
+                                                                            <div class="col-md-12">2do Ganador Grupo B</div>
                                                                             {!! Form::select('WB2', [
-                                                                                  '' => 'Pick a Team',
+                                                                                  '' => 'Seleccione un Equipo',
                                                                                  '5' => 'Portugal',
                                                                                  '7' => 'Spain',
                                                                                  '8' => 'Morocco',
@@ -1133,13 +1133,13 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                          <button type="button" name="submitgroupbhome" id="submitgroupbhome" class="btn btn-primary" style="width: 100%;">
-                                            {{ __('Save and go to Home Page') }}
+                                            {{ __('Guardar e ir a la página de inicio') }}
                                         </button>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="button" name="submitgroupb" id="submitgroupb" class="btn btn-info btn-block" value="Save and go to Next Group" />
+                                        <input type="button" name="submitgroupb" id="submitgroupb" class="btn btn-info btn-block" value="Guardar e ir al siguiente grupo" />
                                          {{-- <button type="submit" class="btn btn-primary" style="width: 100%;">
-                                            {{ __('Save and go to Next Group') }} --}}
+                                            {{ __('Guardar e ir al siguiente grupo') }} --}}
                                         </button>
                                     </div>
                                 </div>
@@ -1151,9 +1151,9 @@
                             <div class="tab-pane container" id="grupoc"> 
                                 <br>
                                 <ul style="line-height:80%">
-                                    <li><p>  Make sure to click on “Save and go to Next Group” or “Save and go to Home Page” after you have made your Score and Winners selections.</p></li>
+                                    <li><p>Asegúrese de hacer clic en "Guardar e ir al siguiente grupo" o "Guardar e ir a la página de inicio" después de haber registrado sus marcadores y ganadores.</p></li>
                                     <li>
-                                        <p>You have to completely fill out the Score and the Winners selections.</p>
+                                        <p>Debe completar todos los Marca y Ganadores..</p>
                                     </li>    
                                 </ul>
                                 <div class="row">
@@ -1162,7 +1162,7 @@
                                             <div class="card-header">
                                                 <div class="row">
                                                     <div class="col-md-4">
-                                                        <h4>{{ __('Group C') }} </h4>
+                                                        <h4>{{ __('Grupo C') }} </h4>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1183,11 +1183,11 @@
                                                             <table id="myTable" class="display table_picks">
                                                                     <thead>
                                                                         <tr>
-                                                                            <th class="th-date">Date</th>
-                                                                            <th class="th-venue">Venue</th>
-                                                                            <th>1st Team</th>
+                                                                            <th class="th-date">Fecha</th>
+                                                                            <th class="th-venue">Ciudad</th>
+                                                                            <th>Equipo 1</th>
                                                                             {{-- <th></th> --}}
-                                                                            <th>2st Team</th>
+                                                                            <th>Equipo 2</th>
                                                                         </tr>
                                                                     </thead>
                                                                     <tbody>
@@ -1502,7 +1502,7 @@
                                         <div class="row justify-content-center">
                                             <div class="col-md-12">
                                                 <div class="card">
-                                                    <div class="card-header"><h4>{{ __('Group Standings') }}</h4></div>
+                                                    <div class="card-header"><h4>{{ __('Posiciones del grupo') }}</h4></div>
 
                                                     <div class="card-body">
                                                         <div class="row">
@@ -1614,8 +1614,8 @@
                                                 <div class="card">
                                                     <div class="card-header">
                                                         <div class="row">
-                                                            <div class="col-md-4">
-                                                                <h4>{{ __('Winners') }} </h4>
+                                                            <div class="col-md-12">
+                                                                <h4>{{ __('Ganadores') }} </h4>
                                                             </div>
                                                         </div>
                                                         
@@ -1628,9 +1628,9 @@
                                                                 <div class="row">
                                                                     <div class="col-md-6">
                                                                         <div class="form-group row">
-                                                                            <div class="col-md-12">Group C winner</div>
+                                                                            <div class="col-md-12">Ganador Grupo C</div>
                                                                             {!! Form::select('WC1', [
-                                                                                  '' => 'Pick a Team',
+                                                                                  '' => 'Seleccione un Equipo',
                                                                                  '9' => 'France',
                                                                                  '11' => 'Australia',
                                                                                  '12' => 'Peru',
@@ -1641,9 +1641,9 @@
                                                                     </div>
                                                                     <div class="col-md-6">
                                                                         <div class="form-group row">
-                                                                            <div class="col-md-12">Group C runner-up</div>
+                                                                            <div class="col-md-12">2do Ganador Grupo C</div>
                                                                             {!! Form::select('WC2', [
-                                                                                  '' => 'Pick a Team',
+                                                                                  '' => 'Seleccione un Equipo',
                                                                                  '9' => 'France',
                                                                                  '11' => 'Australia',
                                                                                  '12' => 'Peru',
@@ -1666,13 +1666,13 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                          <button type="button" id="submitgroupchome" name="submitgroupchome" class="btn btn-primary" style="width: 100%;">
-                                            {{ __('Save and go to Home Page') }}
+                                            {{ __('Guardar e ir a la página de inicio') }}
                                         </button>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="button" name="submitgroupc" id="submitgroupc" class="btn btn-info btn-block" value="Save and go to Next Group" />
+                                        <input type="button" name="submitgroupc" id="submitgroupc" class="btn btn-info btn-block" value="Guardar e ir al siguiente grupo" />
                                          {{-- <button type="submit" class="btn btn-primary" style="width: 100%;">
-                                            {{ __('Save and go to Next Group') }} --}}
+                                            {{ __('Guardar e ir al siguiente grupo') }} --}}
                                         </button>
                                     </div>
                                 </div>
@@ -1684,9 +1684,9 @@
                             <div class="tab-pane container" id="grupod"> 
                                 <br>
                                 <ul style="line-height:80%">
-                                    <li><p>  Make sure to click on “Save and go to Next Group” or “Save and go to Home Page” after you have made your Score and Winners selections.</p></li>
+                                    <li><p>Asegúrese de hacer clic en "Guardar e ir al siguiente grupo" o "Guardar e ir a la página de inicio" después de haber registrado sus marcadores y ganadores.</p></li>
                                     <li>
-                                        <p>You have to completely fill out the Score and the Winners selections.</p>
+                                        <p>Debe completar todos los Marca y Ganadores..</p>
                                     </li>    
                                 </ul>
                                 <div class="row">
@@ -1695,7 +1695,7 @@
                                             <div class="card-header">
                                                 <div class="row">
                                                     <div class="col-md-4">
-                                                        <h4>{{ __('Group D') }} </h4>
+                                                        <h4>{{ __('Grupo D') }} </h4>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1716,11 +1716,11 @@
                                                             <table id="myTable" class="display table_picks">
                                                                     <thead>
                                                                         <tr>
-                                                                            <th class="th-date">Date</th>
-                                                                            <th class="th-venue">Venue</th>
-                                                                            <th>1st Team</th>
+                                                                            <th class="th-date">Fecha</th>
+                                                                            <th class="th-venue">Ciudad</th>
+                                                                            <th>Equipo 1</th>
                                                                             {{-- <th></th> --}}
-                                                                            <th>2st Team</th>
+                                                                            <th>Equipo 2</th>
                                                                         </tr>
                                                                     </thead>
                                                                     <tbody>
@@ -2035,7 +2035,7 @@
                                         <div class="row justify-content-center">
                                             <div class="col-md-12">
                                                 <div class="card">
-                                                    <div class="card-header"><h4>{{ __('Group Standings') }}</h4></div>
+                                                    <div class="card-header"><h4>{{ __('Posiciones del grupo') }}</h4></div>
 
                                                     <div class="card-body">
                                                         <div class="row">
@@ -2147,8 +2147,8 @@
                                                 <div class="card">
                                                     <div class="card-header">
                                                         <div class="row">
-                                                            <div class="col-md-4">
-                                                                <h4>{{ __('Winners') }} </h4>
+                                                            <div class="col-md-12">
+                                                                <h4>{{ __('Ganadores') }} </h4>
                                                             </div>
                                                         </div>
                                                         
@@ -2161,9 +2161,9 @@
                                                                 <div class="row">
                                                                     <div class="col-md-6">
                                                                         <div class="form-group row">
-                                                                            <div class="col-md-12">Group D winner</div>
+                                                                            <div class="col-md-12">Ganador Grupo D</div>
                                                                             {!! Form::select('WD1', [
-                                                                                  '' => 'Pick a Team',
+                                                                                  '' => 'Seleccione un Equipo',
                                                                                  '13' => 'Argentina',
                                                                                  '15' => 'Iceland',
                                                                                  '16' => 'Croatia',
@@ -2174,10 +2174,10 @@
                                                                     </div>
                                                                     <div class="col-md-6">
                                                                         <div class="form-group row">
-                                                                            <div class="col-md-12">Group D runner-up</div>
+                                                                            <div class="col-md-12">2do Ganador Grupo D</div>
 
                                                                             {!! Form::select('WD2', [
-                                                                                  '' => 'Pick a Team',
+                                                                                  '' => 'Seleccione un Equipo',
                                                                                  '13' => 'Argentina',
                                                                                  '15' => 'Iceland',
                                                                                  '16' => 'Croatia',
@@ -2200,13 +2200,13 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                          <button type="button" name="submitgroupdhome" id="submitgroupdhome" class="btn btn-primary" style="width: 100%;">
-                                            {{ __('Save and go to Home Page') }}
+                                            {{ __('Guardar e ir a la página de inicio') }}
                                         </button>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="button" name="submitgroupd" id="submitgroupd" class="btn btn-info btn-block" value="Save and go to Next Group" />
+                                        <input type="button" name="submitgroupd" id="submitgroupd" class="btn btn-info btn-block" value="Guardar e ir al siguiente grupo" />
                                          {{-- <button type="submit" class="btn btn-primary" style="width: 100%;">
-                                            {{ __('Save and go to Next Group') }} --}}
+                                            {{ __('Guardar e ir al siguiente grupo') }} --}}
                                         </button>
                                     </div>
                                 </div>
@@ -2218,9 +2218,9 @@
                             <div class="tab-pane container" id="grupoe">
                                 <br>
                                 <ul style="line-height:80%">
-                                    <li><p>  Make sure to click on “Save and go to Next Group” or “Save and go to Home Page” after you have made your Score and Winners selections.</p></li>
+                                    <li><p>Asegúrese de hacer clic en "Guardar e ir al siguiente grupo" o "Guardar e ir a la página de inicio" después de haber registrado sus marcadores y ganadores.</p></li>
                                     <li>
-                                        <p>You have to completely fill out the Score and the Winners selections.</p>
+                                        <p>Debe completar todos los Marca y Ganadores..</p>
                                     </li>    
                                 </ul>
                                 <div class="row">
@@ -2229,7 +2229,7 @@
                                             <div class="card-header">
                                                 <div class="row">
                                                     <div class="col-md-4">
-                                                        <h4>{{ __('Group E') }} </h4>
+                                                        <h4>{{ __('Grupo E') }} </h4>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2250,11 +2250,11 @@
                                                             <table id="myTable" class="display table_picks">
                                                                     <thead>
                                                                         <tr>
-                                                                            <th class="th-date">Date</th>
-                                                                            <th class="th-venue">Venue</th>
-                                                                            <th>1st Team</th>
+                                                                            <th class="th-date">Fecha</th>
+                                                                            <th class="th-venue">Ciudad</th>
+                                                                            <th>Equipo 1</th>
                                                                             {{-- <th></th> --}}
-                                                                            <th>2st Team</th>
+                                                                            <th>Equipo 2</th>
                                                                         </tr>
                                                                     </thead>
                                                                     <tbody>
@@ -2569,7 +2569,7 @@
                                         <div class="row justify-content-center">
                                             <div class="col-md-12">
                                                 <div class="card">
-                                                    <div class="card-header"><h4>{{ __('Group Standings') }}</h4></div>
+                                                    <div class="card-header"><h4>{{ __('Posiciones del grupo') }}</h4></div>
 
                                                     <div class="card-body">
                                                         <div class="row">
@@ -2681,8 +2681,8 @@
                                                 <div class="card">
                                                     <div class="card-header">
                                                         <div class="row">
-                                                            <div class="col-md-4">
-                                                                <h4>{{ __('Winners') }} </h4>
+                                                            <div class="col-md-12">
+                                                                <h4>{{ __('Ganadores') }} </h4>
                                                             </div>
                                                         </div>
                                                         
@@ -2695,9 +2695,9 @@
                                                                 <div class="row">
                                                                     <div class="col-md-6">
                                                                         <div class="form-group row">
-                                                                            <div class="col-md-12">Group E winner</div>
+                                                                            <div class="col-md-12">Ganador Grupo E</div>
                                                                             {!! Form::select('WE1', [
-                                                                                  '' => 'Pick a Team',
+                                                                                  '' => 'Seleccione un Equipo',
                                                                                  '17' => 'Brazil',
                                                                                  '19' => 'Switzerland',
                                                                                  '20' => 'Costa Rica',
@@ -2708,9 +2708,9 @@
                                                                     </div>
                                                                     <div class="col-md-6">
                                                                         <div class="form-group row">
-                                                                            <div class="col-md-12">Group E runner-up</div>
+                                                                            <div class="col-md-12">2do Ganador Grupo E</div>
                                                                             {!! Form::select('WE2', [
-                                                                                  '' => 'Pick a Team',
+                                                                                  '' => 'Seleccione un Equipo',
                                                                                  '17' => 'Brazil',
                                                                                  '19' => 'Switzerland',
                                                                                  '20' => 'Costa Rica',
@@ -2733,13 +2733,13 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                          <button type="button" name="submitgroupehome" id="submitgroupehome" class="btn btn-primary" style="width: 100%;">
-                                            {{ __('Save and go to Home Page') }}
+                                            {{ __('Guardar e ir a la página de inicio') }}
                                         </button>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="button" name="submitgroupe" id="submitgroupe" class="btn btn-info btn-block" value="Save and go to Next Group" />
+                                        <input type="button" name="submitgroupe" id="submitgroupe" class="btn btn-info btn-block" value="Guardar e ir al siguiente grupo" />
                                          {{-- <button type="submit" class="btn btn-primary" style="width: 100%;">
-                                            {{ __('Save and go to Next Group') }} --}}
+                                            {{ __('Guardar e ir al siguiente grupo') }} --}}
                                         </button>
                                     </div>
                                 </div>
@@ -2751,9 +2751,9 @@
                             <div class="tab-pane container" id="grupof">
                                 <br>
                                 <ul style="line-height:80%">
-                                    <li><p>  Make sure to click on “Save and go to Next Group” or “Save and go to Home Page” after you have made your Score and Winners selections.</p></li>
+                                    <li><p>Asegúrese de hacer clic en "Guardar e ir al siguiente grupo" o "Guardar e ir a la página de inicio" después de haber registrado sus marcadores y ganadores.</p></li>
                                     <li>
-                                        <p>You have to completely fill out the Score and the Winners selections.</p>
+                                        <p>Debe completar todos los Marca y Ganadores..</p>
                                     </li>    
                                 </ul>
                                 <div class="row">
@@ -2762,7 +2762,7 @@
                                             <div class="card-header">
                                                 <div class="row">
                                                     <div class="col-md-4">
-                                                        <h4>{{ __('Group F') }} </h4>
+                                                        <h4>{{ __('Grupo F') }} </h4>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2783,11 +2783,11 @@
                                                             <table id="myTable" class="display table_picks">
                                                                     <thead>
                                                                         <tr>
-                                                                            <th class="th-date">Date</th>
-                                                                            <th class="th-venue">Venue</th>
-                                                                            <th>1st Team</th>
+                                                                            <th class="th-date">Fecha</th>
+                                                                            <th class="th-venue">Ciudad</th>
+                                                                            <th>Equipo 1</th>
                                                                             {{-- <th></th> --}}
-                                                                            <th>2st Team</th>
+                                                                            <th>Equipo 2</th>
                                                                         </tr>
                                                                     </thead>
                                                                     <tbody>
@@ -3102,7 +3102,7 @@
                                         <div class="row justify-content-center">
                                             <div class="col-md-12">
                                                 <div class="card">
-                                                    <div class="card-header"><h4>{{ __('Group Standings') }}</h4></div>
+                                                    <div class="card-header"><h4>{{ __('Posiciones del grupo') }}</h4></div>
 
                                                     <div class="card-body">
                                                         <div class="row">
@@ -3214,8 +3214,8 @@
                                                 <div class="card">
                                                     <div class="card-header">
                                                         <div class="row">
-                                                            <div class="col-md-4">
-                                                                <h4>{{ __('Winners') }} </h4>
+                                                            <div class="col-md-12">
+                                                                <h4>{{ __('Ganadores') }} </h4>
                                                             </div>
                                                         </div>
                                                         
@@ -3228,9 +3228,9 @@
                                                                 <div class="row">
                                                                     <div class="col-md-6">
                                                                         <div class="form-group row">
-                                                                            <div class="col-md-12">Group F winner</div>
+                                                                            <div class="col-md-12">Ganador Grupo F</div>
                                                                             {!! Form::select('WF1', [
-                                                                                  '' => 'Pick a Team',
+                                                                                  '' => 'Seleccione un Equipo',
                                                                                  '21' => 'Germany',
                                                                                  '23' => 'Mexico',
                                                                                  '24' => 'Sweden',
@@ -3241,9 +3241,9 @@
                                                                     </div>
                                                                     <div class="col-md-6">
                                                                         <div class="form-group row">
-                                                                            <div class="col-md-12">Group F runner-up</div>
+                                                                            <div class="col-md-12">2do Ganador Grupo F</div>
                                                                             {!! Form::select('WF2', [
-                                                                                  '' => 'Pick a Team',
+                                                                                  '' => 'Seleccione un Equipo',
                                                                                  '21' => 'Germany',
                                                                                  '23' => 'Mexico',
                                                                                  '24' => 'Sweden',
@@ -3266,13 +3266,13 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                          <button type="button" name="submitgroupfhome" id="submitgroupfhome" class="btn btn-primary" style="width: 100%;">
-                                            {{ __('Save and go to Home Page') }}
+                                            {{ __('Guardar e ir a la página de inicio') }}
                                         </button>
                                     </div>
                                     <div class="col-md-6">
 
                                         
-                                        <input type="button" name="submitgroupf" id="submitgroupf" class="btn btn-info btn-block" value="Save and go to Next Group" />
+                                        <input type="button" name="submitgroupf" id="submitgroupf" class="btn btn-info btn-block" value="Guardar e ir al siguiente grupo" />
                                         </button>
                                     </div>
                                 </div>
@@ -3284,9 +3284,9 @@
                             <div class="tab-pane container" id="grupog">
                                 <br>
                                 <ul style="line-height:80%">
-                                    <li><p>  Make sure to click on “Save and go to Next Group” or “Save and go to Home Page” after you have made your Score and Winners selections.</p></li>
+                                    <li><p>Asegúrese de hacer clic en "Guardar e ir al siguiente grupo" o "Guardar e ir a la página de inicio" después de haber registrado sus marcadores y ganadores.</p></li>
                                     <li>
-                                        <p>You have to completely fill out the Score and the Winners selections.</p>
+                                        <p>Debe completar todos los Marca y Ganadores..</p>
                                     </li>    
                                 </ul>
                                 <div class="row">
@@ -3295,7 +3295,7 @@
                                             <div class="card-header">
                                                 <div class="row">
                                                     <div class="col-md-4">
-                                                        <h4>{{ __('Group G') }} </h4>
+                                                        <h4>{{ __('Grupo G') }} </h4>
                                                     </div>
                                                 </div>
                                             </div>
@@ -3316,11 +3316,11 @@
                                                             <table id="myTable" class="display table_picks">
                                                                     <thead>
                                                                         <tr>
-                                                                            <th class="th-date">Date</th>
-                                                                            <th class="th-venue">Venue</th>
-                                                                            <th>1st Team</th>
+                                                                            <th class="th-date">Fecha</th>
+                                                                            <th class="th-venue">Ciudad</th>
+                                                                            <th>Equipo 1</th>
                                                                             {{-- <th></th> --}}
-                                                                            <th>2st Team</th>
+                                                                            <th>Equipo 2</th>
                                                                         </tr>
                                                                     </thead>
                                                                     <tbody>
@@ -3635,7 +3635,7 @@
                                         <div class="row justify-content-center">
                                             <div class="col-md-12">
                                                 <div class="card">
-                                                    <div class="card-header"><h4>{{ __('Group Standings') }}</h4></div>
+                                                    <div class="card-header"><h4>{{ __('Posiciones del grupo') }}</h4></div>
 
                                                     <div class="card-body">
                                                         <div class="row">
@@ -3747,8 +3747,8 @@
                                                 <div class="card">
                                                     <div class="card-header">
                                                         <div class="row">
-                                                            <div class="col-md-4">
-                                                                <h4>{{ __('Winners') }} </h4>
+                                                            <div class="col-md-12">
+                                                                <h4>{{ __('Ganadores') }} </h4>
                                                             </div>
                                                         </div>
                                                         
@@ -3761,10 +3761,10 @@
                                                                 <div class="row">
                                                                     <div class="col-md-6">
                                                                         <div class="form-group row">
-                                                                            <div class="col-md-12">Group G winner</div>
+                                                                            <div class="col-md-12">Ganador Grupo G</div>
 
                                                                             {!! Form::select('WG1', [
-                                                                                  '' => 'Pick a Team',
+                                                                                  '' => 'Seleccione un Equipo',
                                                                                  '25' => 'Belgium',
                                                                                  '27' => 'Panama',
                                                                                  '28' => 'Tunisia',
@@ -3775,10 +3775,10 @@
                                                                     </div>
                                                                     <div class="col-md-6">
                                                                         <div class="form-group row">
-                                                                            <div class="col-md-12">Group G runner-up</div>
+                                                                            <div class="col-md-12">2do Ganador Grupo G</div>
 
                                                                            {!! Form::select('WG2', [
-                                                                                  '' => 'Pick a Team',
+                                                                                  '' => 'Seleccione un Equipo',
                                                                                  '25' => 'Belgium',
                                                                                  '27' => 'Panama',
                                                                                  '28' => 'Tunisia',
@@ -3801,13 +3801,13 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                          <button type="button" name="submitgroupghome" id="submitgroupghome" class="btn btn-primary" style="width: 100%;">
-                                            {{ __('Save and go to Home Page') }}
+                                            {{ __('Guardar e ir a la página de inicio') }}
                                         </button>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="button" name="submitgroupg" id="submitgroupg" class="btn btn-info btn-block" value="Save and go to Next Group" />
+                                        <input type="button" name="submitgroupg" id="submitgroupg" class="btn btn-info btn-block" value="Guardar e ir al siguiente grupo" />
                                          {{-- <button type="submit" class="btn btn-primary" style="width: 100%;">
-                                            {{ __('Save and go to Next Group') }} --}}
+                                            {{ __('Guardar e ir al siguiente grupo') }} --}}
                                         </button>
                                     </div>
                                 </div>
@@ -3819,9 +3819,9 @@
                             <div class="tab-pane container" id="grupoh">
                                 <br>
                                <ul style="line-height:80%">
-                                    <li><p>  Make sure to click on “Save and go to Next Group” or “Save and go to Home Page” after you have made your Score and Winners selections.</p></li>
+                                    <li><p>Asegúrese de hacer clic en "Guardar e ir al siguiente grupo" o "Guardar e ir a la página de inicio" después de haber registrado sus marcadores y ganadores.</p></li>
                                     <li>
-                                        <p>You have to completely fill out the Score and the Winners selections.</p>
+                                        <p>Debe completar todos los Marca y Ganadores..</p>
                                     </li>    
                                 </ul>
                                 <div class="row">
@@ -3830,7 +3830,7 @@
                                             <div class="card-header">
                                                 <div class="row">
                                                     <div class="col-md-4">
-                                                        <h4>{{ __('Group H') }} </h4>
+                                                        <h4>{{ __('Grupo H') }} </h4>
                                                     </div>
                                                 </div>
                                             </div>
@@ -3851,11 +3851,11 @@
                                                             <table id="myTable" class="display table_picks">
                                                                     <thead>
                                                                         <tr>
-                                                                            <th class="th-date">Date</th>
-                                                                            <th class="th-venue">Venue</th>
-                                                                            <th>1st Team</th>
+                                                                            <th class="th-date">Fecha</th>
+                                                                            <th class="th-venue">Ciudad</th>
+                                                                            <th>Equipo 1</th>
                                                                             {{-- <th></th> --}}
-                                                                            <th>2st Team</th>
+                                                                            <th>Equipo 2</th>
                                                                         </tr>
                                                                     </thead>
                                                                     <tbody>
@@ -4170,7 +4170,7 @@
                                         <div class="row justify-content-center">
                                             <div class="col-md-12">
                                                 <div class="card">
-                                                    <div class="card-header"><h4>{{ __('Group Standings') }}</h4></div>
+                                                    <div class="card-header"><h4>{{ __('Posiciones del grupo') }}</h4></div>
 
                                                     <div class="card-body">
                                                         <div class="row">
@@ -4282,8 +4282,8 @@
                                                 <div class="card">
                                                     <div class="card-header">
                                                         <div class="row">
-                                                            <div class="col-md-4">
-                                                                <h4>{{ __('Winners') }} </h4>
+                                                            <div class="col-md-12">
+                                                                <h4>{{ __('Ganadores') }} </h4>
                                                             </div>
                                                         </div>
                                                         
@@ -4296,10 +4296,10 @@
                                                                 <div class="row">
                                                                     <div class="col-md-6">
                                                                         <div class="form-group row">
-                                                                            <div class="col-md-12">Group H winner</div>
+                                                                            <div class="col-md-12">Ganador Grupo H</div>
 
                                                                             {!! Form::select('WH1', [
-                                                                                  '' => 'Pick a Team',
+                                                                                  '' => 'Seleccione un Equipo',
                                                                                  '29' => 'Poland',
                                                                                  '31' => 'Senegal',
                                                                                  '32' => 'Colombia',
@@ -4310,10 +4310,10 @@
                                                                     </div>
                                                                     <div class="col-md-6">
                                                                         <div class="form-group row">
-                                                                            <div class="col-md-12">Group H runner-up</div>
+                                                                            <div class="col-md-12">2do Ganador Grupo H</div>
 
                                                                             {!! Form::select('WH2', [
-                                                                                  '' => 'Pick a Team',
+                                                                                  '' => 'Seleccione un Equipo',
                                                                                  '29' => 'Poland',
                                                                                  '31' => 'Senegal',
                                                                                  '32' => 'Colombia',
@@ -4336,7 +4336,7 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                          <button type="button" name="submitgrouphhome" id="submitgrouphhome" class="btn btn-primary" style="width: 100%;">
-                                            {{ __('Save and go to Home Page') }}
+                                            {{ __('Guardar e ir a la página de inicio') }}
                                         </button>
                                     </div>
                                     <div class="col-md-6">
@@ -4376,11 +4376,11 @@
                             <div class="col-md-10 offset-md-1 ">
                                 <div class="form-group">
                                     <button type="" class="btn btn-primary" onclick="window.location='{{ route('rules') }}'" style="width: 100%;">
-                                        {{ __('Read the Rules') }}
+                                        {{ __('Leer las Reglas') }}
                                     </button>
                                 </div>
                             </div>
-                            <div class="col-md-10 offset-md-1 ">
+                            {{-- <div class="col-md-10 offset-md-1 ">
                                 <div class="form-group">
                                     <button type="" class="btn btn-primary" onclick="window.location='{{ route('login') }}'" style="width: 100%;">
                                         {{ __('Wolrdcup Results (starts June 12th)') }}
@@ -4395,7 +4395,7 @@
                                         {{(__('(starts June 12th)'))}}
                                     </button>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
@@ -4819,7 +4819,7 @@
             var espS = event.target.value;
             if(espP == espS)
             {
-                toastr.warning('Please make sure to select different teams in the Winners section');
+                toastr.warning('Por favor, asegúrese de seleccionar diferentes equipos en la sección de Ganadores');
                 $('#WA2').val($("#WA2 option:first").val());
             }
         });
@@ -4829,7 +4829,7 @@
             var espP = event.target.value;
             if(espP == espS)
             {
-                toastr.warning('Please make sure to select different teams in the Winners section');
+                toastr.warning('Por favor, asegúrese de seleccionar diferentes equipos en la sección de Ganadores');
                 $('#WA1').val($("#WA1 option:first").val());
             }
         });
@@ -4839,7 +4839,7 @@
             var espS = event.target.value;
             if(espP == espS)
             {
-                toastr.warning('Please make sure to select different teams in the Winners section');
+                toastr.warning('Por favor, asegúrese de seleccionar diferentes equipos en la sección de Ganadores');
                 $('#WB2').val($("#WB2 option:first").val());
             }
         });
@@ -4849,7 +4849,7 @@
             var espP = event.target.value;
             if(espP == espS)
             {
-                toastr.warning('Please make sure to select different teams in the Winners section');
+                toastr.warning('Por favor, asegúrese de seleccionar diferentes equipos en la sección de Ganadores');
                 $('#WB1').val($("#WB1 option:first").val());
             }
         });
@@ -4859,7 +4859,7 @@
             var espS = event.target.value;
             if(espP == espS)
             {
-                toastr.warning('Please make sure to select different teams in the Winners section');
+                toastr.warning('Por favor, asegúrese de seleccionar diferentes equipos en la sección de Ganadores');
                 $('#WC2').val($("#WC2 option:first").val());
             }
         });
@@ -4869,7 +4869,7 @@
             var espP = event.target.value;
             if(espP == espS)
             {
-                toastr.warning('Please make sure to select different teams in the Winners section');
+                toastr.warning('Por favor, asegúrese de seleccionar diferentes equipos en la sección de Ganadores');
                 $('#WC1').val($("#WC1 option:first").val());
             }
         });
@@ -4879,7 +4879,7 @@
             var espS = event.target.value;
             if(espP == espS)
             {
-                toastr.warning('Please make sure to select different teams in the Winners section');
+                toastr.warning('Por favor, asegúrese de seleccionar diferentes equipos en la sección de Ganadores');
                 $('#WD2').val($("#WD2 option:first").val());
             }
         });
@@ -4889,7 +4889,7 @@
             var espP = event.target.value;
             if(espP == espS)
             {
-                toastr.warning('Please make sure to select different teams in the Winners section');
+                toastr.warning('Por favor, asegúrese de seleccionar diferentes equipos en la sección de Ganadores');
                 $('#WD1').val($("#WD1 option:first").val());
             }
         });
@@ -4899,7 +4899,7 @@
             var espS = event.target.value;
             if(espP == espS)
             {
-                toastr.warning('Please make sure to select different teams in the Winners section');
+                toastr.warning('Por favor, asegúrese de seleccionar diferentes equipos en la sección de Ganadores');
                 $('#WE2').val($("#WE2 option:first").val());
             }
         });
@@ -4909,7 +4909,7 @@
             var espP = event.target.value;
             if(espP == espS)
             {
-                toastr.warning('Please make sure to select different teams in the Winners section');
+                toastr.warning('Por favor, asegúrese de seleccionar diferentes equipos en la sección de Ganadores');
                 $('#WE1').val($("#WE1 option:first").val());
             }
         });
@@ -4919,7 +4919,7 @@
             var espS = event.target.value;
             if(espP == espS)
             {
-                toastr.warning('Please make sure to select different teams in the Winners section');
+                toastr.warning('Por favor, asegúrese de seleccionar diferentes equipos en la sección de Ganadores');
                 $('#WF2').val($("#WF2 option:first").val());
             }
         });
@@ -4929,7 +4929,7 @@
             var espP = event.target.value;
             if(espP == espS)
             {
-                toastr.warning('Please make sure to select different teams in the Winners section');
+                toastr.warning('Por favor, asegúrese de seleccionar diferentes equipos en la sección de Ganadores');
                 $('#WF1').val($("#WF1 option:first").val());
             }
         });
@@ -4939,7 +4939,7 @@
             var espS = event.target.value;
             if(espP == espS)
             {
-                toastr.warning('Please make sure to select different teams in the Winners section');
+                toastr.warning('Por favor, asegúrese de seleccionar diferentes equipos en la sección de Ganadores');
                 $('#WG2').val($("#WG2 option:first").val());
             }
         });
@@ -4949,7 +4949,7 @@
             var espP = event.target.value;
             if(espP == espS)
             {
-                toastr.warning('Please make sure to select different teams in the Winners section');
+                toastr.warning('Por favor, asegúrese de seleccionar diferentes equipos en la sección de Ganadores');
                 $('#WG1').val($("#WG1 option:first").val());
             }
         });
@@ -4959,7 +4959,7 @@
             var espS = event.target.value;
             if(espP == espS)
             {
-                toastr.warning('Please make sure to select different teams in the Winners section');
+                toastr.warning('Por favor, asegúrese de seleccionar diferentes equipos en la sección de Ganadores');
                 $('#WH2').val($("#WH2 option:first").val());
             }
         });
@@ -4969,7 +4969,7 @@
             var espP = event.target.value;
             if(espP == espS)
             {
-                toastr.warning('Please make sure to select different teams in the Winners section');
+                toastr.warning('Por favor, asegúrese de seleccionar diferentes equipos en la sección de Ganadores');
                 $('#WH1').val($("#WH1 option:first").val());
             }
         });

@@ -9,7 +9,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title> Polla World Cup | @yield('pagetitle') </title>
+    <title> Polla World Cup Colombia| @yield('pagetitle') </title>
     
     <!-- Scripts -->
     {{-- <script src="{{ asset('js/app.js') }}" defer></script> --}}
@@ -63,7 +63,7 @@
 
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/home') }}">
-                    Polla World Cup
+                    Polla World Cup Colombia
                 </a>
                 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -73,12 +73,12 @@
 
                 <div style="text-align: center; margin-left: 12%;">
 
-                    Registered Pools: {{isset($countpolls) ? $countpolls : null}}
+                    Pollas Registradas: {{isset($countpolls) ? $countpolls : null}}
                 </div>
 
                 <div style="text-align: center; margin-left: 12%; padding-top:8px;">
                 	<ul style="line-height:50%; list-style-type: none;">
-                		<li><p style="font-size: 0.7em;">Countdown to worldcup</p></li>
+                		<li><p style="font-size: 0.7em;">Cuenta Regresiva</p></li>
                 		<li><p id="demo" style='margin-bottom: 1px;'></p></li>
                 	</ul>
                 </div>
@@ -104,7 +104,7 @@
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+                                        {{ __('Salir') }}
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

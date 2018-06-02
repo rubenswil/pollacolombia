@@ -105,22 +105,22 @@
                         </div>
                         
                         {{-- <h1 style="font-size: 60px; text-align: center; color: #004782; font-weight: 700; font-family:Raleway, sans-serif;">Polla World Cup</h1> --}}
-                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Hi {!!$name!!} {!!$lastname!!},</p>
-                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Thank you for registering in <a href="http://www.pollaworldcup.com">pollaworldcup.com</a>! On behalf of the team at <a href="http://www.pollaworldcup.com">pollaworldcup.com</a>, we are excited to have you in our Russia 2018 World Cup Pool. Please allow up to 24 hours for your registration to be accepted. Once accepted, you can log into the website and choose your scores and qualified teams for the World Cup 2018.</p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Hola {!!$name!!} {!!$lastname!!},</p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Gracias por registrarce en  <a href="http://www.pollaworldcupcolombia.com">pollaworldcupcolombia.com</a>! En nombre del equipo de <a href="http://www.pollaworldcupcolombia.com">pollaworldcupcolombia.com</a>, estamos muy contentos de tenerte en nuestra Polla de la Copa Mundial Rusia 2018. Espere hasta 24 horas para que se acepte su registro. Una vez aceptado, puede iniciar sesión en el sitio web y elegir sus puntuaciones y equipos calificados para la Copa Mundial 2018.</p>
 
-                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Your username is: <strong>{!!$email!!}</strong></p>
-                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Your password is: <strong>{!!$password!!}</strong></p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Su usuario es: <strong>{!!$email!!}</strong></p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Su contraseña es: <strong>{!!$password!!}</strong></p>
                        
-                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Once you enter your picks, you will find a link to print them. In addition, on June 11th, after the registration deadline, you will be able to view and print every participant’s picks. You can register as many World Cup Pools as you like with the same email, but just make sure to create a different nickname for every Pool.</p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Una vez que ingrese sus marcadores, encontrará un enlace para imprimirlas. Además, el 11 de junio, después de la fecha límite de inscripción, podrá ver e imprimir las selecciones de cada participante. Puede registrar tantas Pollas de la Copa Mundial como desee con el mismo correo electrónico, pero solo asegúrese de crear un alias diferente para cada Polla.</p>
 
                         
-                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Good luck!
-                            <br><strong><a href="http://www.pollaworldcup.com">pollaworldcup.com</a> Team</strong>
-                            <br>contact@PollaWorldCup.com  
-                            <br>miami@PollaWorldCup.com 
-                            <br>newyork@PollaWorldCup.com 
-                            <br>bogota@PollaWorldCup.com
-                            <br>barranquilla@PollaWorldCup.com</p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Buena Suerte!
+                            <br><strong><a href="http://www.pollaworldcupcolombia.com">pollaworldcupcolombia.com</a> Equipo</strong>
+                            <br>admin@pollaworldcupcolombia.com  
+                            {{-- <br>miami@pollaworldcupcolombia.com 
+                            <br>newyork@pollaworldcupcolombia.com 
+                            <br>bogota@pollaworldcupcolombia.com
+                            <br>barranquilla@pollaworldcupcolombia.com --}}</p>
                       </td>
                     </tr>
                   </table>

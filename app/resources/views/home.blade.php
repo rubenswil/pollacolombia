@@ -18,10 +18,10 @@
                     <div class="card-header">
                         <div class="row">
                             <div class="col-md-8">
-                                <h4>{{ __('My Pools') }} </h4>
+                                <h4>{{ __('Mis Pollas') }} </h4>
                             </div>
                             <div class="col-md-4">
-                                <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary" id="myBtn" style="width: 100%; padding-top: 0;"> Add Additional Pool <span style="font-size: 19px;     font-weight: 700;"></span></button>
+                                <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary" id="myBtn" style="width: 100%; padding-top: 0;"> Agregar Polla Adicional <span style="font-size: 19px;     font-weight: 700;"></span></button>
                             </div>
                         </div>
                         
@@ -31,13 +31,13 @@
                     <div class="card-body">
                         <ul style="line-height:80%" >
                             <li>
-                                <p>Your registered Pool is below. To enter your picks, select “Edit my Picks”.</p>
+                                <p>Su polla registrada está abajo. Para ingresar sus marcadores, seleccione "Editar Mis Marcadores".</p>
                             </li>
                             <li>
-                                <p>To participate in additional Pools, please click “Add Additional Pool”.</p>
+                                <p>Para participar en Pollas adicionales, haga clic en "Agregar Polla Adicional".</p>
                             </li>
                             <li>
-                                <p>Once a Pool is complete, you will be able to Print your Picks.</p>
+                                <p>Una vez que se completa una Polla, podrá Imprimir sus Marcadores.</p>
                             </li>
                         </ul>
 
@@ -48,10 +48,10 @@
                                 <table id="myTable" class="table table_pool">
                                         <thead>
                                             <tr>
-                                                <th>Nickname</th>
-                                                <th>Status</th>
-                                                <th>Complete Pool</th>
-                                                <th>Print Picks</th>
+                                                <th>Nombre Polla</th>
+                                                <th>Estado</th>
+                                                <th>Polla Completa?</th>
+                                                <th>Imprimir Marcadores</th>
                                                 <th></th>
                                                 <th></th>
                                             </tr>
@@ -92,7 +92,7 @@
                                                     {{-- @if($poll->status == 'Pending') --}}
                                                         <div class="col-md-12">
                                                             <div class="control">
-                                                                <button class="btn btn-primary" onclick="window.location='{{ route('picks.show', $poll->iduser_poll) }}'">Edit my Picks</button>
+                                                                <button class="btn btn-primary" onclick="window.location='{{ route('picks.show', $poll->iduser_poll) }}'">Editar Mis Marcadores</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -104,9 +104,8 @@
                                                     @if($poll->status == 'Pending')
                                                     <div class="col-md-12">
                                                         <div class="control">
-                                                            {{-- <a href="{{route('picks.destroy', $poll->iduser_poll)}}" class="btn btn-primary">Delete Poll</a> --}}
                                                             {!! Form::open(['method' => 'DELETE','route' => ['picks.destroy', $poll->iduser_poll],'style'=>'display:inline', 'onsubmit' => 'return confirmDelete()']) !!}
-                                                            {!! Form::submit('Delete', ['class' => 'btn btn-danger']) !!}
+                                                            {!! Form::submit('Borrar', ['class' => 'btn btn-danger']) !!}
                                                             {!! Form::close() !!}
                                                         </div>
                                                     </div>
@@ -138,11 +137,11 @@
                             <div class="col-md-10 offset-md-1 ">
                                 <div class="form-group">
                                     <button type="" class="btn btn-primary" onclick="window.location='{{ route('rules') }}'" style="width: 100%;">
-                                        {{ __('Read the Rules') }}
+                                        {{ __('Leer las Reglas') }}
                                     </button>
                                 </div>
                             </div>
-                            <div class="col-md-10 offset-md-1 ">
+                            {{-- <div class="col-md-10 offset-md-1 ">
                                 <div class="form-group">
                                     <button type="" class="btn btn-primary" style="width: 100%;">
                                         {{ __('Worldcup Results (starts June 12th)') }}
@@ -157,7 +156,7 @@
                                         {{(__('(starts June 12th)'))}}
                                     </button>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
@@ -179,7 +178,7 @@
           
             <!-- Modal Header -->
             <div class="modal-header">
-              <h4 class="modal-title">Create pool</h4>
+              <h4 class="modal-title">Crear polla</h4>
               <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             
@@ -192,7 +191,7 @@
 
                     <div class="form-group row">
                         <div class="col-md-12">
-                            <input id="poll_name" type="text" class="form-control{{ $errors->has('poll_name') ? ' is-invalid' : '' }}" name="poll_name" value="{{ old('poll_name') }}" required placeholder="Pool Name">
+                            <input id="poll_name" type="text" class="form-control{{ $errors->has('poll_name') ? ' is-invalid' : '' }}" name="poll_name" value="{{ old('poll_name') }}" required placeholder="Nombre Polla">
 
                                 @if ($errors->has('poll_name'))
                                     <span class="invalid-feFFedback">
@@ -207,7 +206,7 @@
                             {{-- <button id="submitPolla" class="btn btn-primary" style="width: 100%;">
                                 {{ __('Save') }}
                             </button> --}}
-                            <input type="button" name="submitPolla" id="submitPolla" class="btn btn-info btn-block" value="Save" />
+                            <input type="button" name="submitPolla" id="submitPolla" class="btn btn-info btn-block" value="Guardar" />
 
                             {{-- <a class="btn btn-link" href="{{ route('password.request') }}">
                                 {{ __('Forgot Your Password?') }}
@@ -252,7 +251,7 @@
 
 
     function confirmDelete() {
-        var result = confirm('Are you sure you want to delete?');
+        var result = confirm('Esta seguro que quiere borrar la polla?');
 
         if (result) {
                 return true;

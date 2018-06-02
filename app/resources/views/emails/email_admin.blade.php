@@ -101,19 +101,19 @@
                     <tr>
                       <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;">
                         <h1></h1>
-                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Hi Admin,</p>
-                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">New user has registered <a href="http://www.pollaworldcup.com">pollaworldcup.com</a>!</p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Hola Admin,</p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Nuevo usuario se ha registrado <a href="http://www.pollaworldcupcolombia.com">pollaworldcupcolombia.com</a>!</p>
 
-                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0;">Name: <strong>{!!$name!!},</strong></p>
-                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0;">Last Name: <strong>{!!$lastname!!},</strong></p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0;">Nombre: <strong>{!!$name!!},</strong></p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0;">Apellido Name: <strong>{!!$lastname!!},</strong></p>
                         <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0;">Nickname: <strong>{!!$nickname!!},</strong></p>
                         <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0;">E-Mail: <strong>{!!$email!!},</strong></p>
-                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0;">City: <strong>{!!$city!!},</strong></p>
-                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Cell Phone: <strong>{!!$cellphone!!},</strong></p>
-                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Referral: <strong>{!!$referredby!!},</strong></p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0;">Ciudad: <strong>{!!$city!!},</strong></p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Celular: <strong>{!!$cellphone!!},</strong></p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Referido: <strong>{!!$referredby!!},</strong></p>
                       
                         <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">
-                            <br><strong>PollaWorldCup.com</strong> Team
+                            <br>Equipo <strong>pollaworldcupcolombia.com</strong> 
                         </p>
                       </td>
                     </tr>

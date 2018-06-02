@@ -14,7 +14,7 @@
     <div class="row justify-content-center">
         <div class="col-md-4">
             <div class="card">
-                <div class="card-header"><h4>{{ __('Register') }}</h4>
+                <div class="card-header"><h4>{{ __('Registro') }}</h4>
                 </div>
 
                 <div class="card-body">
@@ -23,7 +23,7 @@
 
                         <div class="form-group row">
                             <div class="col-md-12">
-                                <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus placeholder="First Name">
+                                <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus placeholder="Nombres">
 
                                 @if ($errors->has('name'))
                                     <span class="invalid-feedback">
@@ -35,7 +35,7 @@
 
                         <div class="form-group row">
                             <div class="col-md-12">
-                                <input id="lastname" type="text" class="form-control{{ $errors->has('lastname') ? ' is-invalid' : '' }}" name="lastname" value="{{ old('lastname') }}" required placeholder="Last Name">
+                                <input id="lastname" type="text" class="form-control{{ $errors->has('lastname') ? ' is-invalid' : '' }}" name="lastname" value="{{ old('lastname') }}" required placeholder="Apellidos">
 
                                 @if ($errors->has('lastname'))
                                     <span class="invalid-feedback">
@@ -59,7 +59,7 @@
 
                         <div class="form-group row">
                             <div class="col-md-12">
-                                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required placeholder="Password">
+                                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required placeholder="Contraseña">
                                 
                                 @if ($errors->has('password'))
                                     <span class="invalid-feedback">
@@ -90,13 +90,13 @@
 
                         <div class="form-group row">
                             <div class="col-md-12">
-                                <input id="email-confirm" type="email" class="form-control" name="email_confirmation" required placeholder="Repeat E-Mail">
+                                <input id="email-confirm" type="email" class="form-control" name="email_confirmation" required placeholder="Repetir E-Mail">
                             </div>
                         </div>
 
                         <div class="form-group row">
                             <div class="col-md-12">
-                                <input id="city" type="text" class="form-control{{ $errors->has('city') ? ' is-invalid' : '' }}" name="city" value="{{ old('city') }}" required placeholder="City">
+                                <input id="city" type="text" class="form-control{{ $errors->has('city') ? ' is-invalid' : '' }}" name="city" value="{{ old('city') }}" required placeholder="Ciudad">
                                     @if ($errors->has('city'))
                                         <span class="invalid-feedback">
                                             <strong>{{ $errors->first('city') }}</strong>
@@ -107,7 +107,7 @@
 
                         <div class="form-group row">
                             <div class="col-md-12">
-                                <input id="cellphone" type="text" class="form-control{{ $errors->has('cellphone') ? ' is-invalid' : '' }}" name="cellphone" value="{{ old('cellphone') }}" required placeholder="Cellphone">
+                                <input id="cellphone" type="text" class="form-control{{ $errors->has('cellphone') ? ' is-invalid' : '' }}" name="cellphone" value="{{ old('cellphone') }}" required placeholder="Celular">
                                     @if ($errors->has('cellphone'))
                                         <span class="invalid-feedback">
                                             <strong>{{ $errors->first('cellphone') }}</strong>
@@ -118,7 +118,7 @@
 
                         <div class="form-group row">                                
                             <div class="col-md-12">
-                                <input id="referredby" type="text" class="form-control{{ $errors->has('referredby') ? ' is-invalid' : '' }}" name="referredby" value="{{ old('referredby') }}" placeholder="Referred By">
+                                <input id="referredby" type="text" class="form-control{{ $errors->has('referredby') ? ' is-invalid' : '' }}" name="referredby" value="{{ old('referredby') }}" placeholder="Refererido por">
                                     @if ($errors->has('referredby'))
                                         <span class="invalid-feedback">
                                             <strong>{{ $errors->first('referredby') }}</strong>
@@ -137,7 +137,7 @@
                         <div class="form-group row">
                             <div class="col-md-8 offset-md-2">
                                 <button type="submit" class="btn btn-primary" style="width: 100%;">
-                                    {{ __('Register') }}
+                                    {{ __('Registrar') }}
                                 </button>
                             </div>
                         </div>
@@ -145,7 +145,7 @@
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-2">
                                 <button type="" class="btn btn-primary" onclick="window.location='{{ route('login') }}'" style="width: 100%;">
-                                    {{ __('Login') }}
+                                    {{ __('Entrar') }}
                                 </button>
                             </div>
                         </div>
